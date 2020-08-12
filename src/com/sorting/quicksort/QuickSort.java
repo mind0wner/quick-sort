@@ -4,25 +4,25 @@ import java.util.Random;
 
 public class QuickSort {
     private static final int ARRAY_LENGTH = 30;
-    private static final int[] array = new int[ARRAY_LENGTH];
+    private static final int[] ARRAY = new int[ARRAY_LENGTH];
     private static final Random GENERATOR = new Random();
 
     private static void initArray() {
         for (int i = 0; i < ARRAY_LENGTH; i++) {
-            array[i] = GENERATOR.nextInt(100);
+            ARRAY[i] = GENERATOR.nextInt(100);
         }
     }
 
     private static void printArray() {
         for (int i = 0; i < ARRAY_LENGTH - 1; i++) {
-            System.out.print(array[i] + ", ");
+            System.out.print(ARRAY[i] + ", ");
         }
-        System.out.println(array[ARRAY_LENGTH - 1]);
+        System.out.println(ARRAY[ARRAY_LENGTH - 1]);
     }
 
     public static void main(String[] args) {
         initArray();
-        quickSort(array, 0, ARRAY_LENGTH - 1);
+        quickSort(ARRAY, 0, ARRAY_LENGTH - 1);
         printArray();
     }
 
