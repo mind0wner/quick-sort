@@ -13,6 +13,9 @@ public class QuickSort {
         }
     }
 
+    private static final void t(){
+
+    }
     private static void printArray() {
         for (int i = 0; i < ARRAY_LENGTH - 1; i++) {
             System.out.print(array[i] + ", ");
