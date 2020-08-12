@@ -26,11 +26,11 @@ public class QuickSort {
         printArray();
     }
 
-    private static void quickSort(int[] arr, int begin, int end) {
-        if (begin < end) {
-            int partitionIndex = partition(arr, begin, end);
+    private static void quickSort(int[] arr, int start, int end) {
+        if (start < end) {
+            int partitionIndex = partition(arr, start, end);
 
-            quickSort(arr, begin, partitionIndex - 1);
+            quickSort(arr, start, partitionIndex - 1);
             quickSort(arr, partitionIndex + 1, end);
         }
     }
