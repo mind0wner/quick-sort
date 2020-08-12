@@ -4,8 +4,8 @@ import java.util.Random;
 
 public class QuickSort {
     private static final int ARRAY_LENGTH = 30;
-    private static int[] array = new int[ARRAY_LENGTH];
-    private static Random generator = new Random();
+    private static final int[] array = new int[ARRAY_LENGTH];
+    private static final Random generator = new Random();
 
     private static void initArray() {
         for (int i = 0; i < ARRAY_LENGTH; i++) {
