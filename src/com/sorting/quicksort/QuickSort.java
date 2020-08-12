@@ -7,7 +7,7 @@ public class QuickSort {
     private static final int[] ARRAY = new int[ARRAY_LENGTH];
     private static final Random GENERATOR = new Random();
 
-    private static void initArray() {
+    private static void init() {
         for (int i = 0; i < ARRAY_LENGTH; i++) {
             ARRAY[i] = GENERATOR.nextInt(100);
         }
@@ -21,7 +21,7 @@ public class QuickSort {
     }
 
     public static void main(String[] args) {
-        initArray();
+        init();
         quickSort(ARRAY, 0, ARRAY_LENGTH - 1);
         printArray();
     }
