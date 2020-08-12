@@ -5,11 +5,11 @@ import java.util.Random;
 public class QuickSort {
     private static final int ARRAY_LENGTH = 30;
     private static final int[] array = new int[ARRAY_LENGTH];
-    private static final Random generator = new Random();
+    private static final Random GENERATOR = new Random();
 
     private static void initArray() {
         for (int i = 0; i < ARRAY_LENGTH; i++) {
-            array[i] = generator.nextInt(100);
+            array[i] = GENERATOR.nextInt(100);
         }
     }
 
@@ -49,9 +49,9 @@ public class QuickSort {
             }
         }
 
-        int swapTemp = arr[i + 1];
+        int temp = arr[i + 1];
         arr[i + 1] = arr[end];
-        arr[end] = swapTemp;
+        arr[end] = temp;
 
         return i + 1;
     }
